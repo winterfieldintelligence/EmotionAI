@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emotion AI - Detector</title>
+    <link rel="icon" type="image/png" href="assets/images/eailogo.png" />
+    <link rel="stylesheet" href="emotion.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="assets/images/emotionailogo.png" alt="Emotion AI logo" />
+        </div>
+      </div>
+    </header>
+
+    <main class="detector">
+      <div class="container detector-grid">
+        <section class="vibe-panel">
+          <div class="vibe-title">Your Vibe</div>
+          <div class="vibe-score">Happy (86%)</div>
+        </section>
+
+        <section class="camera-panel">
+          <div class="camera-card" id="cameraCard">
+            <video id="camera" autoplay muted playsinline></video>
+            <div class="camera-placeholder" id="cameraPlaceholder">
+              Enable camera to start detection
+            </div>
+            <div class="focus-box" aria-hidden="true">
+              <span class="corner tl"></span>
+              <span class="corner tr"></span>
+              <span class="corner bl"></span>
+              <span class="corner br"></span>
+            </div>
+            <div class="camera-label">Happy (86%)</div>
+            <button
+              class="camera-fullscreen"
+              id="cameraFullscreen"
+              aria-label="Full screen"
+              type="button"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8 3H3v5M16 3h5v5M8 21H3v-5M21 21h-5v-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="action-row">
+            <button class="action-btn" id="copyLink" type="button">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Copy</span>
+            </button>
+
+            <button class="action-btn" id="shareLink" type="button">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 16V4M12 4l-4 4M12 4l4 4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Share</span>
+            </button>
+
+            <button class="action-btn" id="fullScreen" type="button">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8 3H3v5M16 3h5v5M8 21H3v-5M21 21h-5v-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Full Screen</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="emotion.js"></script>
+  </body>
+</html>
