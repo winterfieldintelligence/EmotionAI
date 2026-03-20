@@ -44,14 +44,11 @@ video {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 24px;
-  font-weight: 500;
 }
 
 .brand img {
-  width: 34px;
-  height: 34px;
+  height: 28px;
+  width: auto;
 }
 
 .detector {
